@@ -6,16 +6,18 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FilterComponent} from './filter/filter.component';
 import {Routes, RouterModule} from '@angular/router';
+import {MainComponent} from './main/main.component';
 
 const appRoutes: Routes = [
     {path: 'filter', component: FilterComponent},
-
+    {path: 'main', component: MainComponent},
 ];
 
 @NgModule({
     declarations: [
         AppComponent,
-        FilterComponent
+        FilterComponent,
+        MainComponent
     ],
     imports: [
         BrowserModule,
